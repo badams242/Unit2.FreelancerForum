@@ -1,11 +1,13 @@
 // Define arrays for possible names and occupations
-const names = ["Alice", "Bob", "Carol", /* Add more names if needed */];
-const occupations = ["Writer", "Teacher", "Programmer", /* Add more occupations if needed */];
+const names = ["Alice", "Bob", "Carol","Joe"];
+const occupations = ["Writer", "Teacher", "Programmer", "Designer"];
 
 // Define an initial array of freelancers
 let freelancers = [
   { name: "Alice", occupation: "Writer", startingPrice: 30 },
   { name: "Bob", occupation: "Teacher", startingPrice: 50 },
+  { name: "Carol", occupation: "Programmer", startingPrice: 70 },
+  { name: "Joe", occupation: "Designer", startingPrice: 100 }
 ];
 
 // Function to render the initial freelancer data
@@ -47,4 +49,4 @@ renderFreelancers();
 updateAveragePrice();
 
 // Call the function to generate a new random freelancer every few seconds
-setInterval(generateRandomFreelancer, 5000); // Adjust the interval as needed
+setInterval(generateRandomFreelancer, 5000); // Adjust the interval 
